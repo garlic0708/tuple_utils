@@ -94,6 +94,8 @@ macro_rules! tuple_impl {
     }
 }
 
+#[macro_export]
+/// A utility macro for generating generic code over tuples
 macro_rules! for_each_prefix (
     ($m:ident, [$(($arg:tt),)*]) => {
         for_each_prefix!($m, [], [$(($arg),)*]);
